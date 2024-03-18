@@ -1,0 +1,8 @@
+prefix=/home/gerardo/rescue_ws/install
+
+Name: serial_read
+Description: Description of serial_read
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
