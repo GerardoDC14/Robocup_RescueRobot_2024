@@ -1,0 +1,13 @@
+<launch>
+  <!-- Load the URDF into the ROS Parameter Server -->
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find my_robot_description)/urdf/my_robot.urdf'" />
+
+  <!-- Run the robot_state_publisher -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+    <!-- Remove or comment out the next line since you're now publishing to /joint_states directly -->
+    <!-- <remap from="/joint_states" to="/my_robot/joint_states" /> -->
+  </node>
+
+  <!-- Optionally, start RViz to visualize your robot -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find my_robot_description)/path/to/your/rviz/config/file.rviz" />
+</launch>

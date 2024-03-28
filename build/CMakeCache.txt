@@ -447,6 +447,12 @@ cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
 //The directory containing a CMake configuration file for cv_bridge.
 cv_bridge_DIR:PATH=/opt/ros/noetic/share/cv_bridge/cmake
 
+//The directory containing a CMake configuration file for dynamic_reconfigure.
+dynamic_reconfigure_DIR:PATH=/opt/ros/noetic/share/dynamic_reconfigure/cmake
+
+//The directory containing a CMake configuration file for eigen_stl_containers.
+eigen_stl_containers_DIR:PATH=/opt/ros/noetic/share/eigen_stl_containers/cmake
+
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/noetic/share/gencpp/cmake
 
@@ -464,6 +470,9 @@ gennodejs_DIR:PATH=/opt/ros/noetic/share/gennodejs/cmake
 
 //The directory containing a CMake configuration file for genpy.
 genpy_DIR:PATH=/opt/ros/noetic/share/genpy/cmake
+
+//The directory containing a CMake configuration file for geometric_shapes.
+geometric_shapes_DIR:PATH=/opt/ros/noetic/share/geometric_shapes/cmake
 
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/opt/ros/noetic/share/geometry_msgs/cmake
@@ -616,14 +625,29 @@ hector_trajectory_server_BINARY_DIR:STATIC=/home/gerardo/rescue_ws/build/hector_
 //Value Computed by CMake
 hector_trajectory_server_SOURCE_DIR:STATIC=/home/gerardo/rescue_ws/src/hector_slam/hector_trajectory_server
 
+//Value Computed by CMake
+ik_solver_pkg_BINARY_DIR:STATIC=/home/gerardo/rescue_ws/build/ik_solver_pkg
+
+//Value Computed by CMake
+ik_solver_pkg_SOURCE_DIR:STATIC=/home/gerardo/rescue_ws/src/ik_solver_pkg
+
 //The directory containing a CMake configuration file for image_transport.
 image_transport_DIR:PATH=/opt/ros/noetic/share/image_transport/cmake
+
+//Value Computed by CMake
+joystick_control_pkg_BINARY_DIR:STATIC=/home/gerardo/rescue_ws/build/joystick_control_pkg
+
+//Value Computed by CMake
+joystick_control_pkg_SOURCE_DIR:STATIC=/home/gerardo/rescue_ws/src/joystick_control_pkg
+
+//The directory containing a CMake configuration file for kdl_parser.
+kdl_parser_DIR:PATH=/opt/ros/noetic/share/kdl_parser/cmake
 
 //The directory containing a CMake configuration file for laser_geometry.
 laser_geometry_DIR:PATH=/opt/ros/noetic/share/laser_geometry/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/noetic/lib/librostime.so
+lib:FILEPATH=/opt/ros/noetic/lib/libmoveit_move_group_capabilities_base.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/noetic/share/message_filters/cmake
@@ -634,14 +658,62 @@ message_generation_DIR:PATH=/opt/ros/noetic/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/noetic/share/message_runtime/cmake
 
+//The directory containing a CMake configuration file for moveit_core.
+moveit_core_DIR:PATH=/opt/ros/noetic/share/moveit_core/cmake
+
+//The directory containing a CMake configuration file for moveit_msgs.
+moveit_msgs_DIR:PATH=/opt/ros/noetic/share/moveit_msgs/cmake
+
+//Value Computed by CMake
+moveit_pkg_BINARY_DIR:STATIC=/home/gerardo/rescue_ws/build/moveit_pkg
+
+//Value Computed by CMake
+moveit_pkg_SOURCE_DIR:STATIC=/home/gerardo/rescue_ws/src/moveit_pkg
+
+//The directory containing a CMake configuration file for moveit_ros_manipulation.
+moveit_ros_manipulation_DIR:PATH=/opt/ros/noetic/share/moveit_ros_manipulation/cmake
+
+//The directory containing a CMake configuration file for moveit_ros_move_group.
+moveit_ros_move_group_DIR:PATH=/opt/ros/noetic/share/moveit_ros_move_group/cmake
+
+//The directory containing a CMake configuration file for moveit_ros_occupancy_map_monitor.
+moveit_ros_occupancy_map_monitor_DIR:PATH=/opt/ros/noetic/share/moveit_ros_occupancy_map_monitor/cmake
+
+//The directory containing a CMake configuration file for moveit_ros_planning.
+moveit_ros_planning_DIR:PATH=/opt/ros/noetic/share/moveit_ros_planning/cmake
+
+//The directory containing a CMake configuration file for moveit_ros_planning_interface.
+moveit_ros_planning_interface_DIR:PATH=/opt/ros/noetic/share/moveit_ros_planning_interface/cmake
+
+//The directory containing a CMake configuration file for moveit_ros_warehouse.
+moveit_ros_warehouse_DIR:PATH=/opt/ros/noetic/share/moveit_ros_warehouse/cmake
+
+//Value Computed by CMake
+my_robot_description_BINARY_DIR:STATIC=/home/gerardo/rescue_ws/build/my_robot_description
+
+//Value Computed by CMake
+my_robot_description_SOURCE_DIR:STATIC=/home/gerardo/rescue_ws/src/my_robot_description
+
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/noetic/share/nav_msgs/cmake
+
+//The directory containing a CMake configuration file for object_recognition_msgs.
+object_recognition_msgs_DIR:PATH=/opt/ros/noetic/share/object_recognition_msgs/cmake
+
+//The directory containing a CMake configuration file for octomap_msgs.
+octomap_msgs_DIR:PATH=/opt/ros/noetic/share/octomap_msgs/cmake
 
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/noetic/share/pluginlib/cmake
 
+//The directory containing a CMake configuration file for random_numbers.
+random_numbers_DIR:PATH=/opt/ros/noetic/share/random_numbers/cmake
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
+
+//The directory containing a CMake configuration file for rosconsole_bridge.
+rosconsole_bridge_DIR:PATH=/opt/ros/noetic/share/rosconsole_bridge/cmake
 
 //The directory containing a CMake configuration file for roscpp.
 roscpp_DIR:PATH=/opt/ros/noetic/share/roscpp/cmake
@@ -685,6 +757,12 @@ serial_read_BINARY_DIR:STATIC=/home/gerardo/rescue_ws/build/serial_read
 //Value Computed by CMake
 serial_read_SOURCE_DIR:STATIC=/home/gerardo/rescue_ws/src/serial_read
 
+//The directory containing a CMake configuration file for shape_msgs.
+shape_msgs_DIR:PATH=/opt/ros/noetic/share/shape_msgs/cmake
+
+//The directory containing a CMake configuration file for srdfdom.
+srdfdom_DIR:PATH=/opt/ros/noetic/share/srdfdom/cmake
+
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/noetic/share/std_msgs/cmake
 
@@ -693,6 +771,12 @@ std_srvs_DIR:PATH=/opt/ros/noetic/share/std_srvs/cmake
 
 //The directory containing a CMake configuration file for tf2.
 tf2_DIR:PATH=/opt/ros/noetic/share/tf2/cmake
+
+//The directory containing a CMake configuration file for tf2_eigen.
+tf2_eigen_DIR:PATH=/opt/ros/noetic/share/tf2_eigen/cmake
+
+//The directory containing a CMake configuration file for tf2_geometry_msgs.
+tf2_geometry_msgs_DIR:PATH=/opt/ros/noetic/share/tf2_geometry_msgs/cmake
 
 //The directory containing a CMake configuration file for tf2_msgs.
 tf2_msgs_DIR:PATH=/opt/ros/noetic/share/tf2_msgs/cmake
@@ -706,6 +790,12 @@ tf2_ros_DIR:PATH=/opt/ros/noetic/share/tf2_ros/cmake
 //The directory containing a CMake configuration file for tf.
 tf_DIR:PATH=/opt/ros/noetic/share/tf/cmake
 
+//The directory containing a CMake configuration file for trajectory_msgs.
+trajectory_msgs_DIR:PATH=/opt/ros/noetic/share/trajectory_msgs/cmake
+
+//The directory containing a CMake configuration file for urdf.
+urdf_DIR:PATH=/opt/ros/noetic/share/urdf/cmake
+
 //Value Computed by CMake
 vision_package_BINARY_DIR:STATIC=/home/gerardo/rescue_ws/build/vision_package
 
@@ -714,6 +804,9 @@ vision_package_SOURCE_DIR:STATIC=/home/gerardo/rescue_ws/src/vision_package
 
 //The directory containing a CMake configuration file for visualization_msgs.
 visualization_msgs_DIR:PATH=/opt/ros/noetic/share/visualization_msgs/cmake
+
+//The directory containing a CMake configuration file for warehouse_ros.
+warehouse_ros_DIR:PATH=/opt/ros/noetic/share/warehouse_ros/cmake
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/noetic/share/xmlrpcpp/cmake
@@ -868,7 +961,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=21
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=25
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
