@@ -80,7 +80,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: link0_passive
+    Fixed Frame: Spacecraft
   Name: root
   Tools:
     - Class: rviz/Interact
@@ -108,7 +108,7 @@ Visualization Manager:
       Name: Current View
       Near Clip Distance: 0.01
       Pitch: 0.5
-      Target Frame: link0_passive
+      Target Frame: Spacecraft
       Yaw: -0.6232355833053589
     Saved: ~
 Window Geometry:

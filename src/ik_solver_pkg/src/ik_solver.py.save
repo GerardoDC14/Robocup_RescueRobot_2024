@@ -23,27 +23,29 @@ class IKSolver:
         # Subscriber to the target position
         rospy.Subscriber("/target_position", Point, self.target_position_callback)
 
-    def target_position_callback(self, msg):
-        # Prepare the pose target
-        pose_target = geometry_msgs.msg.Pose()
-        pose_target.position.x = msg.x
-        pose_target.position.y = msg.y
-        pose_target.position.z = msg.z
-        pose_target.orientation.w = 1.0  # Assuming no specific orientation
+def target_position_callback(self, msg):
+    # Prepare the pose target
+    pose_target = geometry_msgs.msg.Pose()
+    pose_target.position.x = msg.x
+    pose_target.position.y = msg.y
+    pose_target.position.z = msg.z
+    pose_target.orientation.w = 1.0  # Assuming no specific orientation
 
-        # Set the pose target
-        self.move_group.set_pose_target(pose_target)
+    # Set the pose target
+    self.move_group.set_pose_target(pose_target)
 
-        # Plan to the new pose
-        plan_success, plan, planning_time, error_code = self.move_group.plan()
-        if plan_success:
-            # Execute the plan
-            self.move_group.execute(plan, wait=True)
-        else:
-            rospy.logerr("Planning failed with error code: %s", error_code)
+    # Plan to the new pose
+    plan_success, plan, planning_time, error_code = self.move_group.plan()
+    if plan_success:
+        # Execute the plan
+        self.move_group.execute(plan, wait=True)
+    else:
+        rospy.logerr("Planning failed with error code: %s", error_code)
 
-        # Clear the targets after planning
-        self.move_group.clear_pose_targets()
+    # Clear the targets after planning
+    self.move_group.clear_pose_targets()
+	
+
 
 if __name__ == '__main__':
     ik_solver = IKSolver()
