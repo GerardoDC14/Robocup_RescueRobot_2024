@@ -28,4 +28,4 @@ def test_camera(camera_index):
     cv2.destroyAllWindows()
 
 # Test
-test_camera(4)
+test_camera(6)

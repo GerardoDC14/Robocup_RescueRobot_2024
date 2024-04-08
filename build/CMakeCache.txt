@@ -14,6 +14,12 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+6dof_moveit_BINARY_DIR:STATIC=/home/gerardo/rescue_ws/build/6dof_moveit
+
+//Value Computed by CMake
+6dof_moveit_SOURCE_DIR:STATIC=/home/gerardo/rescue_ws/src/6dof_moveit
+
 //Builds the googlemock subproject
 BUILD_GMOCK:BOOL=ON
 
@@ -961,7 +967,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=25
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=26
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

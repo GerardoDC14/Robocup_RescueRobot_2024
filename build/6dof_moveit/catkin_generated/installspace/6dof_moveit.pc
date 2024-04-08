@@ -1,0 +1,8 @@
+prefix=/home/gerardo/rescue_ws/install
+
+Name: 6dof_moveit
+Description: Description of 6dof_moveit
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

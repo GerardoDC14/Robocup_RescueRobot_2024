@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/gerardo/rescue_ws/build
 
 # The main recursive "all" target.
 all: gtest/all
+all: 6dof_moveit/all
 all: hector_slam/hector_geotiff_launch/all
 all: hector_slam/hector_slam/all
 all: hector_slam/hector_slam_launch/all
@@ -80,6 +81,7 @@ all: ik_solver_pkg/all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
+preinstall: 6dof_moveit/preinstall
 preinstall: hector_slam/hector_geotiff_launch/preinstall
 preinstall: hector_slam/hector_slam/preinstall
 preinstall: hector_slam/hector_slam_launch/preinstall
@@ -111,6 +113,7 @@ clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
+clean: 6dof_moveit/clean
 clean: hector_slam/hector_geotiff_launch/clean
 clean: hector_slam/hector_slam/clean
 clean: hector_slam/hector_slam_launch/clean
@@ -134,6 +137,24 @@ clean: vision_package/clean
 clean: ik_solver_pkg/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory 6dof_moveit
+
+# Recursive "all" directory target.
+6dof_moveit/all:
+
+.PHONY : 6dof_moveit/all
+
+# Recursive "preinstall" directory target.
+6dof_moveit/preinstall:
+
+.PHONY : 6dof_moveit/preinstall
+
+# Recursive "clean" directory target.
+6dof_moveit/clean: 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+.PHONY : 6dof_moveit/clean
 
 #=============================================================================
 # Directory level rules for directory gtest
@@ -261,7 +282,7 @@ hector_slam/hector_geotiff_launch/preinstall:
 .PHONY : hector_slam/hector_geotiff_launch/preinstall
 
 # Recursive "clean" directory target.
-hector_slam/hector_geotiff_launch/clean: hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/clean
+hector_slam/hector_geotiff_launch/clean:
 
 .PHONY : hector_slam/hector_geotiff_launch/clean
 
@@ -941,31 +962,31 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
-# Target rules for target hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir
+# Target rules for target 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir
 
 # All Build rule for target.
-hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/all:
-	$(MAKE) -f hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/build.make hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/depend
-	$(MAKE) -f hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/build.make hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/build
+6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/build.make 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/build.make 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gerardo/rescue_ws/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
-.PHONY : hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/all
+.PHONY : 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/all
 
 # Build rule for subdir invocation for target.
-hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gerardo/rescue_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gerardo/rescue_ws/build/CMakeFiles 0
-.PHONY : hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/rule
+.PHONY : 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
-_catkin_empty_exported_target: hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/rule
+_catkin_empty_exported_target: 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 .PHONY : _catkin_empty_exported_target
 
 # clean rule for target.
-hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	$(MAKE) -f hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/build.make hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/clean
+6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/build.make 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 #=============================================================================
 # Target rules for target hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_py.dir
@@ -2144,7 +2165,7 @@ hector_slam/hector_geotiff/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/cl
 # Target rules for target hector_slam/hector_geotiff/CMakeFiles/geotiff_node.dir
 
 # All Build rule for target.
-hector_slam/hector_geotiff/CMakeFiles/geotiff_node.dir/all: hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/all
+hector_slam/hector_geotiff/CMakeFiles/geotiff_node.dir/all: 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/all
 hector_slam/hector_geotiff/CMakeFiles/geotiff_node.dir/all: hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
 hector_slam/hector_geotiff/CMakeFiles/geotiff_node.dir/all: hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 hector_slam/hector_geotiff/CMakeFiles/geotiff_node.dir/all: hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
@@ -2315,7 +2336,7 @@ hector_slam/hector_geotiff/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
 # Target rules for target hector_slam/hector_geotiff/CMakeFiles/geotiff_writer.dir
 
 # All Build rule for target.
-hector_slam/hector_geotiff/CMakeFiles/geotiff_writer.dir/all: hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/all
+hector_slam/hector_geotiff/CMakeFiles/geotiff_writer.dir/all: 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/all
 hector_slam/hector_geotiff/CMakeFiles/geotiff_writer.dir/all: hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
 hector_slam/hector_geotiff/CMakeFiles/geotiff_writer.dir/all: hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 hector_slam/hector_geotiff/CMakeFiles/geotiff_writer.dir/all: hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
@@ -2377,7 +2398,7 @@ hector_slam/hector_geotiff/CMakeFiles/geotiff_writer.dir/clean:
 # Target rules for target hector_slam/hector_geotiff/CMakeFiles/geotiff_saver.dir
 
 # All Build rule for target.
-hector_slam/hector_geotiff/CMakeFiles/geotiff_saver.dir/all: hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/all
+hector_slam/hector_geotiff/CMakeFiles/geotiff_saver.dir/all: 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/all
 hector_slam/hector_geotiff/CMakeFiles/geotiff_saver.dir/all: hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
 hector_slam/hector_geotiff/CMakeFiles/geotiff_saver.dir/all: hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 hector_slam/hector_geotiff/CMakeFiles/geotiff_saver.dir/all: hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
@@ -2440,7 +2461,7 @@ hector_slam/hector_geotiff/CMakeFiles/geotiff_saver.dir/clean:
 # Target rules for target hector_slam/hector_geotiff_plugins/CMakeFiles/hector_geotiff_plugins.dir
 
 # All Build rule for target.
-hector_slam/hector_geotiff_plugins/CMakeFiles/hector_geotiff_plugins.dir/all: hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/all
+hector_slam/hector_geotiff_plugins/CMakeFiles/hector_geotiff_plugins.dir/all: 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/all
 hector_slam/hector_geotiff_plugins/CMakeFiles/hector_geotiff_plugins.dir/all: hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
 hector_slam/hector_geotiff_plugins/CMakeFiles/hector_geotiff_plugins.dir/all: hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 hector_slam/hector_geotiff_plugins/CMakeFiles/hector_geotiff_plugins.dir/all: hector_slam/hector_map_tools/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all

@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("6dof_moveit")
 subdirs("hector_slam/hector_geotiff_launch")
 subdirs("hector_slam/hector_slam")
 subdirs("hector_slam/hector_slam_launch")

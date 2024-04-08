@@ -294,7 +294,7 @@ _catkin_empty_exported_target: cmake_check_build_system
 
 # fast build rule for target.
 _catkin_empty_exported_target/fast:
-	$(MAKE) -f hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/build.make hector_slam/hector_geotiff_launch/CMakeFiles/_catkin_empty_exported_target.dir/build
+	$(MAKE) -f 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/build.make 6dof_moveit/CMakeFiles/_catkin_empty_exported_target.dir/build
 .PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
