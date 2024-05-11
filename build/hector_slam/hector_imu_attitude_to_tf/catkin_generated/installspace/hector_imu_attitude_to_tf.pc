@@ -1,4 +1,4 @@
-prefix=/home/gerardo/rescue_ws/install
+prefix=/home/robotec/rescue_ws/Robocup_RescueRobot_2024/install
 
 Name: hector_imu_attitude_to_tf
 Description: Description of hector_imu_attitude_to_tf

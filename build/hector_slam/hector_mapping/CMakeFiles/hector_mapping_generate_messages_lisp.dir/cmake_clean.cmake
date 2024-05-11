@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/gerardo/rescue_ws/devel/share/common-lisp/ros/hector_mapping/msg/HectorDebugInfo.lisp"
-  "/home/gerardo/rescue_ws/devel/share/common-lisp/ros/hector_mapping/msg/HectorIterData.lisp"
-  "/home/gerardo/rescue_ws/devel/share/common-lisp/ros/hector_mapping/srv/ResetMapping.lisp"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/common-lisp/ros/hector_mapping/msg/HectorDebugInfo.lisp"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/common-lisp/ros/hector_mapping/msg/HectorIterData.lisp"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/common-lisp/ros/hector_mapping/srv/ResetMapping.lisp"
   "CMakeFiles/hector_mapping_generate_messages_lisp"
 )
 

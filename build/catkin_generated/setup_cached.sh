@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/gerardo/rescue_ws/build'
+export PWD='/home/robotec/rescue_ws/Robocup_RescueRobot_2024/build'

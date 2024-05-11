@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/gerardo/rescue_ws/src/rplidar_ros/src/client.cpp
+/home/robotec/rescue_ws/Robocup_RescueRobot_2024/src/rplidar_ros/src/client.cpp
 ros/ros.h
-/home/gerardo/rescue_ws/src/rplidar_ros/src/ros/ros.h
+/home/robotec/rescue_ws/Robocup_RescueRobot_2024/src/rplidar_ros/src/ros/ros.h
 sensor_msgs/LaserScan.h
-/home/gerardo/rescue_ws/src/rplidar_ros/src/sensor_msgs/LaserScan.h
+/home/robotec/rescue_ws/Robocup_RescueRobot_2024/src/rplidar_ros/src/sensor_msgs/LaserScan.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

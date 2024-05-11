@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/gerardo/rescue_ws/devel/include/hector_nav_msgs/GetDistanceToObstacle.h"
-  "/home/gerardo/rescue_ws/devel/include/hector_nav_msgs/GetNormal.h"
-  "/home/gerardo/rescue_ws/devel/include/hector_nav_msgs/GetRecoveryInfo.h"
-  "/home/gerardo/rescue_ws/devel/include/hector_nav_msgs/GetRobotTrajectory.h"
-  "/home/gerardo/rescue_ws/devel/include/hector_nav_msgs/GetSearchPosition.h"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/include/hector_nav_msgs/GetDistanceToObstacle.h"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/include/hector_nav_msgs/GetNormal.h"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/include/hector_nav_msgs/GetRecoveryInfo.h"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/include/hector_nav_msgs/GetRobotTrajectory.h"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/include/hector_nav_msgs/GetSearchPosition.h"
   "CMakeFiles/hector_nav_msgs_generate_messages_cpp"
 )
 

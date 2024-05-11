@@ -1,8 +1,8 @@
-prefix=/home/gerardo/rescue_ws/devel
+prefix=/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel
 
 Name: hector_mapping
 Description: Description of hector_mapping
 Version: 0.5.2
-Cflags: -I/home/gerardo/rescue_ws/devel/include -I/home/gerardo/rescue_ws/src/hector_slam/hector_mapping/include -I/usr/include/eigen3
+Cflags: -I/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/include -I/home/robotec/rescue_ws/Robocup_RescueRobot_2024/src/hector_slam/hector_mapping/include -I/usr/include/eigen3
 Libs: -L${prefix}/lib 
 Requires: roscpp nav_msgs visualization_msgs tf message_filters laser_geometry message_runtime

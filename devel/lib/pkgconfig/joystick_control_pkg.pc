@@ -1,8 +1,0 @@
-prefix=/home/gerardo/rescue_ws/devel
-
-Name: joystick_control_pkg
-Description: Description of joystick_control_pkg
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

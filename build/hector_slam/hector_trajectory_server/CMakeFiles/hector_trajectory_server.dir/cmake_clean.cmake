@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/gerardo/rescue_ws/devel/lib/hector_trajectory_server/hector_trajectory_server"
-  "/home/gerardo/rescue_ws/devel/lib/hector_trajectory_server/hector_trajectory_server.pdb"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/lib/hector_trajectory_server/hector_trajectory_server"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/lib/hector_trajectory_server/hector_trajectory_server.pdb"
   "CMakeFiles/hector_trajectory_server.dir/src/hector_trajectory_server.cpp.o"
 )
 

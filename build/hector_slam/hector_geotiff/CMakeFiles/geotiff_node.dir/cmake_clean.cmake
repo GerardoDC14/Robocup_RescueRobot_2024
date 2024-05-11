@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/gerardo/rescue_ws/devel/lib/hector_geotiff/geotiff_node"
-  "/home/gerardo/rescue_ws/devel/lib/hector_geotiff/geotiff_node.pdb"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/lib/hector_geotiff/geotiff_node"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/lib/hector_geotiff/geotiff_node.pdb"
   "CMakeFiles/geotiff_node.dir/src/geotiff_node.cpp.o"
 )
 

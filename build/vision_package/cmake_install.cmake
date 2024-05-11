@@ -1,8 +1,8 @@
-# Install script for directory: /home/gerardo/rescue_ws/src/vision_package
+# Install script for directory: /home/robotec/rescue_ws/Robocup_RescueRobot_2024/src/vision_package
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/gerardo/rescue_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/gerardo/rescue_ws/build/vision_package/catkin_generated/installspace/vision_package.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/build/vision_package/catkin_generated/installspace/vision_package.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vision_package/cmake" TYPE FILE FILES
-    "/home/gerardo/rescue_ws/build/vision_package/catkin_generated/installspace/vision_packageConfig.cmake"
-    "/home/gerardo/rescue_ws/build/vision_package/catkin_generated/installspace/vision_packageConfig-version.cmake"
+    "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/build/vision_package/catkin_generated/installspace/vision_packageConfig.cmake"
+    "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/build/vision_package/catkin_generated/installspace/vision_packageConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vision_package" TYPE FILE FILES "/home/gerardo/rescue_ws/src/vision_package/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vision_package" TYPE FILE FILES "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/src/vision_package/package.xml")
 endif()
 

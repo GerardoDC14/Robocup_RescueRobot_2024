@@ -2,7 +2,7 @@
 
 # Source env.
 source /opt/ros/noetic/setup.bash
-source /home/gerardo/rescue_ws/devel/setup.bash
+source /home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/setup.bash
 
 sudo chmod 666 /dev/ttyUSB0
 

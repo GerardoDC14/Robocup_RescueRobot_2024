@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/gerardo/rescue_ws/devel/include/hector_mapping/HectorDebugInfo.h"
-  "/home/gerardo/rescue_ws/devel/include/hector_mapping/HectorIterData.h"
-  "/home/gerardo/rescue_ws/devel/include/hector_mapping/ResetMapping.h"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/include/hector_mapping/HectorDebugInfo.h"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/include/hector_mapping/HectorIterData.h"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/include/hector_mapping/ResetMapping.h"
   "CMakeFiles/hector_mapping_generate_messages_cpp"
 )
 

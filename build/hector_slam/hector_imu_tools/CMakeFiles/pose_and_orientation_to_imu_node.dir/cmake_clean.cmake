@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/gerardo/rescue_ws/devel/lib/hector_imu_tools/pose_and_orientation_to_imu_node"
-  "/home/gerardo/rescue_ws/devel/lib/hector_imu_tools/pose_and_orientation_to_imu_node.pdb"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/lib/hector_imu_tools/pose_and_orientation_to_imu_node"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/lib/hector_imu_tools/pose_and_orientation_to_imu_node.pdb"
   "CMakeFiles/pose_and_orientation_to_imu_node.dir/src/pose_and_orientation_to_imu_node.cpp.o"
 )
 

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/gerardo/rescue_ws/devel/share/roseus/ros/hector_mapping/manifest.l"
-  "/home/gerardo/rescue_ws/devel/share/roseus/ros/hector_mapping/msg/HectorDebugInfo.l"
-  "/home/gerardo/rescue_ws/devel/share/roseus/ros/hector_mapping/msg/HectorIterData.l"
-  "/home/gerardo/rescue_ws/devel/share/roseus/ros/hector_mapping/srv/ResetMapping.l"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/roseus/ros/hector_mapping/manifest.l"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/roseus/ros/hector_mapping/msg/HectorDebugInfo.l"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/roseus/ros/hector_mapping/msg/HectorIterData.l"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/roseus/ros/hector_mapping/srv/ResetMapping.l"
   "CMakeFiles/hector_mapping_generate_messages_eus"
 )
 

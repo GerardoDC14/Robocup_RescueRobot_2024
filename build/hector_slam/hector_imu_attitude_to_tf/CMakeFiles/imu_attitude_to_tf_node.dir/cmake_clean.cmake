@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/gerardo/rescue_ws/devel/lib/hector_imu_attitude_to_tf/imu_attitude_to_tf_node"
-  "/home/gerardo/rescue_ws/devel/lib/hector_imu_attitude_to_tf/imu_attitude_to_tf_node.pdb"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/lib/hector_imu_attitude_to_tf/imu_attitude_to_tf_node"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/lib/hector_imu_attitude_to_tf/imu_attitude_to_tf_node.pdb"
   "CMakeFiles/imu_attitude_to_tf_node.dir/src/imu_attitude_to_tf_node.cpp.o"
 )
 

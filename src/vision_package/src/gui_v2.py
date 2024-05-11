@@ -10,8 +10,6 @@ import queue
 import rospy
 from std_msgs.msg import String
 
-# Imports
-from zed_camera import ZedCameraHandler
 from standard_camera import StandardCamera
 from people_detection import PeopleDetector
 
@@ -25,16 +23,14 @@ class RescueRobotHMI:
         self.serial_data_queue = queue.Queue()
         self.stopEvent = threading.Event()
 
-       # Init. ZED camera
-        self.zed_handler = ZedCameraHandler()
 
         # Init. cameras
-        self.standard_camera1 = StandardCamera(camera_id=0)  # For example purposes
-        self.standard_camera2 = StandardCamera(camera_id=4)  # For example purposes
+        self.standard_camera0 = StandardCamera(camera_id=0)
+        self.standard_camera1 = StandardCamera(camera_id=2)  
         
 
         # Init. people detection
-        self.people_detector = PeopleDetector(self.zed_handler)
+        self.people_detector = PeopleDetector()
 
         # Setup GUI
         self.setup_gui_components()
@@ -79,29 +75,21 @@ class RescueRobotHMI:
         self.window.grid_columnconfigure(1, weight=1)
         self.window.grid_columnconfigure(2, weight=1)
 
-        # ZED camera
-        self.zed_frame_label = ttk.Label(self.window)
-        self.zed_frame_label.grid(row=1, column=1, padx=5, pady=5, sticky='wens')
-        self.zed_camera_label = tk.Label(self.window, text="Gripper Camera", font=label_font,
-                                        foreground=label_fg, background=label_bg,
-                                        relief=label_relief, borderwidth=label_borderwidth)
-        self.zed_camera_label.grid(row=0, column=1, padx=5, pady=0, sticky='n')
+        # Front camera
+        self.standard_frame_label0 = ttk.Label(self.window)
+        self.standard_frame_label0.grid(row=1, column=0, padx=5, pady=5, sticky='wens')
+        self.standard_camera_label0 = tk.Label(self.window, text="Front Camera", font=label_font,
+                                            foreground=label_fg, background=label_bg,
+                                            relief=label_relief, borderwidth=label_borderwidth)
+        self.standard_camera_label0.grid(row=0, column=1, padx=5, pady=0, sticky='n')
 
         # Front camera
         self.standard_frame_label1 = ttk.Label(self.window)
-        self.standard_frame_label1.grid(row=1, column=0, padx=5, pady=5, sticky='wens')
+        self.standard_frame_label1.grid(row=1, column=1, padx=5, pady=5, sticky='wens')
         self.standard_camera_label1 = tk.Label(self.window, text="Front Camera", font=label_font,
                                             foreground=label_fg, background=label_bg,
                                             relief=label_relief, borderwidth=label_borderwidth)
         self.standard_camera_label1.grid(row=0, column=0, padx=5, pady=0, sticky='n')
-
-        # Back camera
-        self.standard_frame_label2 = ttk.Label(self.window)
-        self.standard_frame_label2.grid(row=1, column=2, padx=5, pady=5, sticky='wens')
-        self.standard_camera_label2 = tk.Label(self.window, text="Back camera", font=label_font,
-                                            foreground=label_fg, background=label_bg,
-                                            relief=label_relief, borderwidth=label_borderwidth)
-        self.standard_camera_label2.grid(row=0, column=2, padx=5, pady=0, sticky='n')
 
     def setup_gauges(self):
         self.rpm_gauge = tk_tools.RotaryScale(self.window, max_value=1023.0, size=100, unit='RPM')
@@ -141,17 +129,19 @@ class RescueRobotHMI:
 
     def video_loop(self):
         while not self.stopEvent.is_set():
-            # ZED camera
-            ret, zed_frame = self.zed_handler.capture_frame()
+            # Handle camera 0
+            ret, frame = self.standard_camera1.capture_frame()
             if ret:
-                # People detection | ZED camera
-                detections_with_depth = self.people_detector.detect_and_measure_depth(zed_frame)
-                self.people_detector.draw_detections(zed_frame, detections_with_depth)
-                self.display_frame(zed_frame, self.zed_frame_label)
-
-            # Disp. frames | Cameras
-            self.display_camera_feed(self.standard_camera1, self.standard_frame_label1)
-            self.display_camera_feed(self.standard_camera2, self.standard_frame_label2)
+                # Optionally perform detection and display for camera 0
+                self.display_frame(frame, self.standard_frame_label1)
+            
+            # Handle camera 1
+            ret, frame = self.standard_camera0.capture_frame()
+            if ret:
+                detections = self.people_detector.detect_people(frame)
+                self.people_detector.draw_detections(frame, detections)
+                self.display_frame(frame, self.standard_frame_label0)
+            
 
     def display_camera_feed(self, camera, label):
         ret, frame = camera.capture_frame()
@@ -170,9 +160,8 @@ class RescueRobotHMI:
     def on_closing(self):
         print("Closing...")
         self.stopEvent.set()
-        self.zed_handler.close()
+        self.standard_camera0.release()
         self.standard_camera1.release()
-        self.standard_camera2.release()
         self.window.destroy()
 
 def main():

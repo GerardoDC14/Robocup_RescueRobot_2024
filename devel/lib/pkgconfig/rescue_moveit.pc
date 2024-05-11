@@ -1,0 +1,8 @@
+prefix=/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel
+
+Name: rescue_moveit
+Description: Description of rescue_moveit
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

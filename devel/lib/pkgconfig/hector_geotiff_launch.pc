@@ -1,4 +1,4 @@
-prefix=/home/gerardo/rescue_ws/devel
+prefix=/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel
 
 Name: hector_geotiff_launch
 Description: Description of hector_geotiff_launch

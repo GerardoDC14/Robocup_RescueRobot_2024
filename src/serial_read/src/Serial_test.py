@@ -10,7 +10,7 @@ pub = rospy.Publisher('serial_data', String, queue_size=10)
 
 rate = rospy.Rate(100) 
 
-ser = serial.Serial('/dev/ttyUSB1', 9600)
+ser = serial.Serial('/dev/ttyACM0', 115200)
 time.sleep(2)
 
 while not rospy.is_shutdown():

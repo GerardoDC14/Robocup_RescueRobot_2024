@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/gerardo/rescue_ws/devel/lib/rplidar_ros/rplidarNodeClient"
-  "/home/gerardo/rescue_ws/devel/lib/rplidar_ros/rplidarNodeClient.pdb"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/lib/rplidar_ros/rplidarNodeClient"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/lib/rplidar_ros/rplidarNodeClient.pdb"
   "CMakeFiles/rplidarNodeClient.dir/src/client.cpp.o"
 )
 

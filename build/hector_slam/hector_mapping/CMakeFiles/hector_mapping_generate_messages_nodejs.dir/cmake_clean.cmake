@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/gerardo/rescue_ws/devel/share/gennodejs/ros/hector_mapping/msg/HectorDebugInfo.js"
-  "/home/gerardo/rescue_ws/devel/share/gennodejs/ros/hector_mapping/msg/HectorIterData.js"
-  "/home/gerardo/rescue_ws/devel/share/gennodejs/ros/hector_mapping/srv/ResetMapping.js"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/gennodejs/ros/hector_mapping/msg/HectorDebugInfo.js"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/gennodejs/ros/hector_mapping/msg/HectorIterData.js"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/gennodejs/ros/hector_mapping/srv/ResetMapping.js"
   "CMakeFiles/hector_mapping_generate_messages_nodejs"
 )
 

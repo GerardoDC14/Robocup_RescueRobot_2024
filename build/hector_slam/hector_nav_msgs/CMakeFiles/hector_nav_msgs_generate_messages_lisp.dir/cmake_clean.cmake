@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/gerardo/rescue_ws/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetDistanceToObstacle.lisp"
-  "/home/gerardo/rescue_ws/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetNormal.lisp"
-  "/home/gerardo/rescue_ws/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetRecoveryInfo.lisp"
-  "/home/gerardo/rescue_ws/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetRobotTrajectory.lisp"
-  "/home/gerardo/rescue_ws/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetSearchPosition.lisp"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetDistanceToObstacle.lisp"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetNormal.lisp"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetRecoveryInfo.lisp"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetRobotTrajectory.lisp"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/common-lisp/ros/hector_nav_msgs/srv/GetSearchPosition.lisp"
   "CMakeFiles/hector_nav_msgs_generate_messages_lisp"
 )
 

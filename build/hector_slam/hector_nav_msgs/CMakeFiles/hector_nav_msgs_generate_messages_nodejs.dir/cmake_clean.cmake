@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/gerardo/rescue_ws/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetDistanceToObstacle.js"
-  "/home/gerardo/rescue_ws/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetNormal.js"
-  "/home/gerardo/rescue_ws/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetRecoveryInfo.js"
-  "/home/gerardo/rescue_ws/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetRobotTrajectory.js"
-  "/home/gerardo/rescue_ws/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetSearchPosition.js"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetDistanceToObstacle.js"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetNormal.js"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetRecoveryInfo.js"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetRobotTrajectory.js"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/share/gennodejs/ros/hector_nav_msgs/srv/GetSearchPosition.js"
   "CMakeFiles/hector_nav_msgs_generate_messages_nodejs"
 )
 

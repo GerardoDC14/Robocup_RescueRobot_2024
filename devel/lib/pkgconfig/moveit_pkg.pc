@@ -1,8 +1,0 @@
-prefix=/home/gerardo/rescue_ws/devel
-
-Name: moveit_pkg
-Description: Description of moveit_pkg
-Version: 0.3.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/gerardo/rescue_ws/devel/lib/rplidar_ros/rplidarNode"
-  "/home/gerardo/rescue_ws/devel/lib/rplidar_ros/rplidarNode.pdb"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/lib/rplidar_ros/rplidarNode"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/lib/rplidar_ros/rplidarNode.pdb"
   "CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o"
   "CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.o"
   "CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o"

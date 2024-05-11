@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/gerardo/rescue_ws/devel/lib/hector_map_server/hector_map_server"
-  "/home/gerardo/rescue_ws/devel/lib/hector_map_server/hector_map_server.pdb"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/lib/hector_map_server/hector_map_server"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/lib/hector_map_server/hector_map_server.pdb"
   "CMakeFiles/hector_map_server.dir/src/hector_map_server.cpp.o"
 )
 

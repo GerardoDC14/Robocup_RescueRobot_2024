@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/gerardo/rescue_ws/src/hector_slam/hector_imu_tools
-# Build directory: /home/gerardo/rescue_ws/build/hector_slam/hector_imu_tools
+# Source directory: /home/robotec/rescue_ws/Robocup_RescueRobot_2024/src/hector_slam/hector_imu_tools
+# Build directory: /home/robotec/rescue_ws/Robocup_RescueRobot_2024/build/hector_slam/hector_imu_tools
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

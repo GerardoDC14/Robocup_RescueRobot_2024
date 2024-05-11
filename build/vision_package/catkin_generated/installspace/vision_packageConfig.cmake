@@ -67,14 +67,14 @@ set(vision_package_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(vision_package_SOURCE_PREFIX /home/gerardo/rescue_ws/src/vision_package)
-  set(vision_package_DEVEL_PREFIX /home/gerardo/rescue_ws/devel)
+  set(vision_package_SOURCE_PREFIX /home/robotec/rescue_ws/Robocup_RescueRobot_2024/src/vision_package)
+  set(vision_package_DEVEL_PREFIX /home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel)
   set(vision_package_INSTALL_PREFIX "")
   set(vision_package_PREFIX ${vision_package_DEVEL_PREFIX})
 else()
   set(vision_package_SOURCE_PREFIX "")
   set(vision_package_DEVEL_PREFIX "")
-  set(vision_package_INSTALL_PREFIX /home/gerardo/rescue_ws/install)
+  set(vision_package_INSTALL_PREFIX /home/robotec/rescue_ws/Robocup_RescueRobot_2024/install)
   set(vision_package_PREFIX ${vision_package_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/gerardo/rescue_ws/install/lib;/home/gerardo/rescue_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/robotec/rescue_ws/Robocup_RescueRobot_2024/install/lib;/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/gerardo/rescue_ws/devel/lib/hector_compressed_map_transport/map_to_image_node"
-  "/home/gerardo/rescue_ws/devel/lib/hector_compressed_map_transport/map_to_image_node.pdb"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/lib/hector_compressed_map_transport/map_to_image_node"
+  "/home/robotec/rescue_ws/Robocup_RescueRobot_2024/devel/lib/hector_compressed_map_transport/map_to_image_node.pdb"
   "CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o"
 )
 
